@@ -1,0 +1,18 @@
+import CIE.*;
+import SEE.*;
+class ciesee
+{
+public static void main(String[] args)
+{
+Student s=new Student();
+Internal j=new Internal();
+External e=new External();
+s.getdata();
+j.getcie();
+e.getsee();
+s.putdata();
+System.out.println("Final marks in the 5 subjects :\n");
+for(int i=0;i<5;i++)
+System.out.println((e.markssee[i]+j.markscie[i])+"\t");
+}
+}

@@ -1,0 +1,29 @@
+package CIE;
+import java.util.*;
+import java.lang.*;
+
+public class Student
+{
+String usn,name;
+int sem;
+public Student()
+{
+usn="";
+name="";
+sem=1;
+}
+public void getdata()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the name of the student : ");
+name=sc.next();
+System.out.println("Enter the usn of the student : ");
+usn=sc.next();
+System.out.println("Enter the current semester of the student : ");
+sem=sc.nextInt();
+}
+public void putdata()
+{
+System.out.println("Name of the student : "+name+"\nUSN of the student : "+usn+"\nCurrent Semester of the student : "+sem+"\n");
+}
+}
